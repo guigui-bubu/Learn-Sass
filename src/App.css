@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/***creations de variables scss**/
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  background-color: #673ab7;
+  padding: 2rem;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.card {
+  background-color: white;
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.card__image {
+  height: 14rem;
+  background-image: url("https://media.peugeot.fr/image/57/4/508.624574.18.jpg?autocrop=1");
+  background-size: cover;
+  background-position: center center;
+}
+.card__content {
+  padding: 2rem;
+}
+.card__title {
+  margin: 0;
+  color: black;
+}
+.card__description {
+  margin: 0;
+  color: #999;
+}
+.card--dark {
+  background: black;
+}
+.card--dark .card__title {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

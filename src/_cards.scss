@@ -1,0 +1,36 @@
+.card {
+  background-color: white;
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  @include border-radius(0.5rem);
+
+  &__image {
+    height: 14rem;
+    background-image: url("https://media.peugeot.fr/image/57/4/508.624574.18.jpg?autocrop=1");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__content {
+    padding: $spacing;
+  }
+
+  &__title {
+    margin: 0;
+    color: black;
+  }
+  &__description {
+    margin: 0;
+    color: $dark-grey;
+  }
+
+  &--dark {
+    background: black;
+
+    .card__title {
+      color: white;
+    }
+  }
+}
